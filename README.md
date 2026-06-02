@@ -180,28 +180,32 @@ Now press (Ctrl-X) to exit
     
 ### STEP 13 initilise the frappe bench & install frappe latest version 
 
-    bench init frappe-bench --frappe-branch version-15 --python python3.11
+    bench init frappe-bench \
+      --frappe-path https://gitea.innoblitz.in/deepak/Frappe.git \
+      --frappe-branch main \
+      --python python3.11
     
     cd frappe-bench/
     bench start
     
 ### STEP 14 create a site in frappe bench 
     
-    bench new-site dcode.com
+    bench new-site testsite.com
     
-    bench --site dcode.com add-to-hosts
+    bench --site testsite.com add-to-hosts
 
-Open url http://dcode.com:8000 to login 
+Open url http://testsite.com:8000 to login 
 
 
-### STEP 15 install ERPNext latest version in bench & site
+### STEP 15 install Company and Clefincode_chat latest version in bench & site
 
-    
-    bench get-app erpnext --branch version-15
-    ###OR
-    bench get-app https://github.com/frappe/erpnext --branch version-15
+    bench get-app https://gitea.innoblitz.in/deepak/Company.git --branch main
 
-    bench --site dcode.com install-app erpnext
+    bench --site testsite.com install-app company
+
+    bench get-app https://gitea.innoblitz.in/deepak/clefincode_chat.git --branch main
+
+    bench --site testsite.com install-app clefincode_chat
     
     bench start
     
