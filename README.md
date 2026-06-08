@@ -190,22 +190,22 @@ Now press (Ctrl-X) to exit
     
 ### STEP 14 create a site in frappe bench 
     
-    bench new-site testsite.com
+    bench new-site trail.erp.innoblitz.in.com
     
-    bench --site testsite.com add-to-hosts
+    bench --site trail.erp.innoblitz.in.com add-to-hosts
 
-Open url http://testsite.com:8000 to login 
+Open url http://trail.erp.innoblitz.in.com:8000 to login 
 
 
 ### STEP 15 install Company and Clefincode_chat latest version in bench & site
 
     bench get-app https://gitea.innoblitz.in/deepak/Company.git --branch main
 
-    bench --site testsite.com install-app company
+    bench --site trail.erp.innoblitz.in.com install-app company
 
     bench get-app https://gitea.innoblitz.in/deepak/clefincode_chat.git --branch main
 
-    bench --site testsite.com install-app clefincode_chat
+    bench --site trail.erp.innoblitz.in.com install-app clefincode_chat
     
     bench start
     
