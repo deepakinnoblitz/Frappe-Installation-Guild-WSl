@@ -192,20 +192,20 @@ Now press (Ctrl-X) to exit
     
     bench new-site trail.erp.innoblitz.in
     
-    bench --site trail.erp.innoblitz.in.com add-to-hosts
+    bench --site trail.erp.innoblitz.in add-to-hosts
 
-Open url http://trail.erp.innoblitz.in.com:8000 to login 
+Open url http://trail.erp.innoblitz.in:8000 to login 
 
 
 ### STEP 15 install Company and Clefincode_chat latest version in bench & site
 
     bench get-app https://gitea.innoblitz.in/deepak/Company.git --branch main
 
-    bench --site trail.erp.innoblitz.in.com install-app company
+    bench --site trail.erp.innoblitz.in install-app company
 
     bench get-app https://gitea.innoblitz.in/deepak/clefincode_chat.git --branch main
 
-    bench --site trail.erp.innoblitz.in.com install-app clefincode_chat
+    bench --site trail.erp.innoblitz.in install-app clefincode_chat
     
     bench start
     
