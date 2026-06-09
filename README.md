@@ -190,7 +190,7 @@ Now press (Ctrl-X) to exit
     
 ### STEP 14 create a site in frappe bench 
     
-    bench new-site trail.erp.innoblitz.in.com
+    bench new-site trail.erp.innoblitz.in
     
     bench --site trail.erp.innoblitz.in.com add-to-hosts
 
