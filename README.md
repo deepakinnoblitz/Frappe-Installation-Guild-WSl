@@ -181,7 +181,7 @@ Now press (Ctrl-X) to exit
 ### STEP 13 initilise the frappe bench & install frappe latest version 
 
     bench init frappe-bench \
-      --frappe-path https://gitea.innoblitz.in/deepak/Frappe.git \
+      --frappe-path https://github.com/deepakinnoblitz/Frappe.git \
       --frappe-branch main \
       --python python3.11
     
@@ -199,11 +199,11 @@ Open url http://trail.erp.innoblitz.in:8000 to login
 
 ### STEP 15 install Company and Clefincode_chat latest version in bench & site
 
-    bench get-app https://gitea.innoblitz.in/deepak/Company.git --branch main
+    bench get-app https://github.com/deepakinnoblitz/Company.git --branch main
 
     bench --site trail.erp.innoblitz.in install-app company
 
-    bench get-app https://gitea.innoblitz.in/deepak/clefincode_chat.git --branch main
+    bench get-app https://github.com/deepakinnoblitz/clefincode_chat.git --branch main
 
     bench --site trail.erp.innoblitz.in install-app clefincode_chat
     
