@@ -189,6 +189,8 @@ Now press (Ctrl-X) to exit
     bench start
     
 ### STEP 14 create a site in frappe bench 
+
+    pip install pandas qrcode livekit livekit-api
     
     bench new-site trail.erp.innoblitz.in
     
